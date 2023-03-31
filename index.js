@@ -51,9 +51,32 @@
 //         console.log("This year is not a Leap Year.");
 //     }
 //  }
-{
-    // yeh program user ko welcome message show kare ga
-let name = prompt("Apna naam likhiye:"); // user se naam mangna
-console.log("Assalam o Alaikum, " + name + "!"); // welcome message show karna
+// {
+//     // yeh program user ko welcome message show kare ga
+// let name = prompt("Apna naam likhiye:"); // user se naam mangna
+// console.log("Assalam o Alaikum, " + name + "!"); // welcome message show karna
 
-}
+// }
+var vowl="k"
+if(vowl=="a")
+     console.log("Your entered word is vowl");
+else if(vowl=="e")
+     console.log("Your entered word is vowl");
+else if(vowl=="i")
+     console.log("Your entered word is vowl");
+else if(vowl=="o")
+     console.log("Your entered word is vowl");
+else if(vowl=="u")
+     console.log("Your entered word is vowl");
+else if(vowl=="A")
+     console.log("Your entered word is vowl");
+else if(vowl=="E")
+     console.log("Your entered word is vowl");
+else if(vowl=="I")
+     console.log("Your entered word is vowl");
+else if(vowl=="O")
+     console.log("Your entered word is vowl");
+else if(vowl=="U")
+     console.log("Your entered word is vowl");
+else
+    console.log("Your entered word is not a vowl");
