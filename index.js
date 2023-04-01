@@ -80,3 +80,21 @@ else if(vowl=="U")
      console.log("Your entered word is vowl");
 else
     console.log("Your entered word is not a vowl");
+    {
+     var  Physics=95, Chemistry=95, Biology=95, Mathematics=95, Computer=95;
+     var Totalnumber = "95%" ;
+     if (Totalnumber > "90%" )
+        console.log("Grade A");
+     else if (Totalnumber > "80%" )
+        console.log("Grade B");
+     else if (Totalnumber > "70%" )
+        console.log("Grade C");
+     else if (Totalnumber > "60%" )
+        console.log("Grade D");
+     else if (Totalnumber > "50%" )
+        console.log("Grade E");
+     else if (Totalnumber > "40%" )
+        console.log("Grade F");
+     else if (Totalnumber < "40%" )
+        console.log("Failed");
+ }   
