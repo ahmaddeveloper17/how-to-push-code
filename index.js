@@ -3,16 +3,16 @@
 // function out() {
 //    document.write("World Ends Tomorrow");
 // }
-// function over() {
-//    document.getElementById("para").style.backgroundColor= "red"
-// }
-// function out() {
-//    document.getElementById("para").style.backgroundColor= "blue"
-// }
+function over() {
+   document.getElementById("para").className = "changebg1"//style.backgroundColor= "red"
+}
+function out() {
+   document.getElementById("para").className = "changebg2"//style.backgroundColor= "blue"
+}
 
-function youtubepage() {
-   window.location= "https://www.youtube.com/"
-}
-function mygithublink() {
-   window.location= "https://github.com/ahmaddeveloper17"
-}
+// function youtubepage() {
+//    window.location= "https://www.youtube.com/"
+// }
+// function mygithublink() {
+//    window.location= "https://github.com/ahmaddeveloper17"
+// }
