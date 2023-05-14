@@ -172,21 +172,48 @@
 // }
 
 
-let image = document.getElementById("images");
-let currentimage = 1 ;
-function changeimage() {
-    if (currentimage === 1) {
-        img.src = 'Screenshot (2).png';
-        currentimage = 2;
-    }
-    else if (currentimage === 2) {
-        img.src = 'Screenshot (3).png';
-        currentimage = 3;
-    }
-    if (currentimage === 3) {
-        img.src = ' Screenshot (1).png';
-        currentimage = 1;
-    }
+// let image = document.getElementById("images");
+// let currentimage = 1 ;
+// function changeimage() {
+//     if (currentimage === 1) {
+//         img.src = 'Screenshot (2).png';
+//         currentimage = 2;
+//     }
+//     else if (currentimage === 2) {
+//         img.src = 'Screenshot (3).png';
+//         currentimage = 3;
+//     }
+//     if (currentimage === 3) {
+//         img.src = ' Screenshot (1).png';
+//         currentimage = 1;
+//     }
+// }
+
+let users = []
+
+function gg() {
+    let userName = document.getElementById("name").value
+    let userEmail = document.getElementById("email").value
+    let userPhone = document.getElementById("phone").value
+    let newuser = {
+        name : userName ,
+        email : userEmail ,
+        phone : userPhone
+       }
+       users.push(newuser)
+displayresult()
 }
+function displayresult() {
+    let result = ""
+    for (let index = 0; index < users.length; index++) {
+        const user = users[index];
+        console.log('user',user);
+result =result + `<div> <h1>Name: ${user.name} </h1> <p>Email: ${user.email} </p> <span>phone: ${user.phone} </span> </div>`
+    }
+console.log('resultresult' ,result);
+document.getElementById("result").innerHTML=result
+}
+
+
 
 
