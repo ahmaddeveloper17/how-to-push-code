@@ -189,30 +189,86 @@
 //     }
 // }
 
-let users = []
+// let users = []
 
-function gg() {
-    let userName = document.getElementById("name").value
-    let userEmail = document.getElementById("email").value
-    let userPhone = document.getElementById("phone").value
-    let newuser = {
-        name : userName ,
-        email : userEmail ,
-        phone : userPhone
-       }
-       users.push(newuser)
-displayresult()
+// function gg() {
+//     let userName = document.getElementById("name").value
+//     let userEmail = document.getElementById("email").value
+//     let userPhone = document.getElementById("phone").value
+//     let newuser = {
+//         name : userName ,
+//         email : userEmail ,
+//         phone : userPhone
+//        }
+//        users.push(newuser)
+// displayresult()
+// }
+// function displayresult() {
+//     let result = ""
+//     for (let index = 0; index < users.length; index++) {
+//         const user = users[index];
+//         console.log('user',user);
+// result =result + `<div> <h1>Name: ${user.name} </h1> <p>Email: ${user.email} </p> <span>phone: ${user.phone} </span> </div>`
+//     }
+// console.log('resultresult' ,result);
+// document.getElementById("result").innerHTML=result
+// }
+
+
+
+
+
+
+function data() {
+    var userName = document.getElementById ("1").value
+if (userName.split (' ').length > 1 && userName >= 'a' && userName <='z') {
+alert("your name is correct")
 }
-function displayresult() {
-    let result = ""
-    for (let index = 0; index < users.length; index++) {
-        const user = users[index];
-        console.log('user',user);
-result =result + `<div> <h1>Name: ${user.name} </h1> <p>Email: ${user.email} </p> <span>phone: ${user.phone} </span> </div>`
-    }
-console.log('resultresult' ,result);
-document.getElementById("result").innerHTML=result
+else{
+alert("Please enter full name")
 }
+
+
+    var countryCode = document.getElementById ("4").value
+if (countryCode === '+92') {
+    alert ("Your country code is correct")
+} else {
+alert (" Please enter correct country code")
+}
+
+
+
+    var state = document.getElementById ("5").value
+if (state == 'punjab' || state == 'sindh' ) {
+    alert (" Your state is correct")
+} else {
+    alert (" please enter correct state")
+}
+
+
+
+    var cnic = document.getElementById ("6").value
+if (/^\d+$/.test(cnic) && cnic.length == 13 ) {
+    alert (" Your cnic is correct")
+}
+else {
+    alert (" please enter correct cnic")
+}
+
+
+    var bio = document.getElementById ("7").value 
+var userBio = bio
+alert (userBio)
+console.log(userBio);
+}
+
+
+
+
+
+
+
+
 
 
 
